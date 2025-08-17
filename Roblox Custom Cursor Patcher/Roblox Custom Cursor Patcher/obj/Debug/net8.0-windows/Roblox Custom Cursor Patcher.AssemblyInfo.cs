@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roblox Custom Cursor Patcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c1f4d113c7b2ec17a39b6fe1e76d24da87f367c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dfc0ef452bb0c334155b4d21eab930117e1af26")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roblox Custom Cursor Patcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Roblox Custom Cursor Patcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

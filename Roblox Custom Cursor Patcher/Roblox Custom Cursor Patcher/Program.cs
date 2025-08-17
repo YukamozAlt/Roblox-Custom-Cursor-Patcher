@@ -1,17 +1,36 @@
 namespace Roblox_Custom_Cursor_Patcher
 {
+    using System.Timers;
+
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            string customCursorPath = "";
+        }
+
+        class CursorManager 
+        {
+            public string customCursorPath = string.Empty;
+
+            public static void SetCustomCursor(string path_to_cursor_to_replace, string path_to_custom_cursor)
+            {
+
+            }
+        }
+
+        class CursorWatcher
+        {
+            private Timer timer;
+            private string cursorPath;
+
+            public CursorWatcher(string path)
+            {
+                cursorPath = path;
+                timer = new Timer(2000);
+                timer.Elapsed += (s, e) => CursorManager.SetCustomCursor(cursorPath);
+            }
         }
     }
 }
